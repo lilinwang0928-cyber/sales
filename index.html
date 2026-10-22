@@ -133,6 +133,12 @@ body{padding-bottom:70px}
 .seg button{border:1.5px solid var(--navy);background:#fff;color:var(--navy);border-radius:8px;padding:4px 12px}
 .seg button.on{background:var(--navy);color:#fff}
 pre.out{white-space:pre-wrap;background:#f8f9fc;border:1px dashed var(--navy2);border-radius:12px;padding:12px;font-family:inherit;margin:10px 0}
+.tl{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px}
+.tl .t{flex:1 1 150px;border-radius:12px;padding:10px 12px;background:#f8f9fc;border:1.5px solid var(--line)}
+.tl .t b{display:block;color:var(--navy)}
+.tl .t.done{border-color:var(--good);background:#e9f8f0}
+.tl .t.next{border-color:var(--orange);background:var(--cream)}
+.part{margin:26px 0 6px;padding-top:14px;border-top:2px dashed var(--line);color:var(--navy);font-size:20px}
 footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40px}
 @media (max-width:520px){.mouth{grid-template-columns:1fr}.timer{font-size:38px}}
 @media print{.pbar,.listen,nav.stations,.next,.btn,.rec{display:none!important}section.st{display:block!important;page-break-after:always}}
@@ -188,7 +194,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
       <div class="mini"><b>⑥ 問題急救站</b><br>兩秒不冷場</div>
       <div class="mini"><b>⑦ 每日節奏</b><br>SOP 五階段</div>
       <div class="mini"><b>⑧ 我的開場白</b><br>寫下來、錄下來</div>
-      <div class="mini"><b>📣 會後分享</b><br>綺綺老師的話＋週四前留言</div>
+      <div class="mini"><b>📣 會後分享</b><br>兩次培訓回放、簡報與綺綺老師的話</div>
     </div>
   </div>
 
@@ -447,7 +453,44 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
 <!-- 會後分享 -->
 <section class="st" id="sq" data-title="📣 會後分享">
   <div class="st-head"><div class="badge">📣</div><h2>綺綺老師的會後感言與資訊分享</h2></div>
-  <p class="lead">【教育科技展｜第一次培訓】結束後，綺綺老師留給大家的話、相關資源，以及週四上線前要完成的四件事。</p>
+  <p class="lead">每次培訓後，綺綺老師留給大家的話與相關資源。</p>
+
+  <div class="card">
+    <h3>🗓️ 培訓時程</h3>
+    <div class="tl">
+      <div class="t done"><b>第一次培訓 ✓</b>10/20（二）19:00–20:30<br><span class="small">心法與方法</span></div>
+      <div class="t done"><b>第二次培訓 ✓</b>10/22（四）晚上<br><span class="small">業務實務練習（兩兩練習）</span></div>
+      <div class="t next"><b>行前會</b>11/5（四）晚上<br><span class="small">線上相見</span></div>
+      <div class="t"><b>展覽登場</b>11/12（四）–11/15（日）<br><span class="small">台北世貿一館 B215</span></div>
+    </div>
+  </div>
+
+  <h3 class="part">【教育科技展｜第二次培訓】10/22（四）</h3>
+  <div class="letter">
+    <p>謝謝今天有上線練習的每一位夥伴！</p>
+    <p>如果你剛好今天有事無法上線，也沒關係，邀請你先看回放影片，有機會的話也可以找一個不認識這套系統的人，練習介紹一下～</p>
+    <p>下一次線上相見是 <b>11/5（四）晚上的行前會</b>，若有任何問題都歡迎留言喔！✨</p>
+    <div class="sig">—— 恩綺（綺綺老師）</div>
+  </div>
+  <div class="card">
+    <h3>🎬 回放：【業務實務練習】2026 資訊月×臺灣教育科技展 115.10.22</h3>
+    <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/wjA9T9BukGk?rel=0&amp;playsinline=1" title="【業務實務練習】2026 資訊月×臺灣教育科技展 115.10.22" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+    <p class="small">若影片無法播放，請直接 <a href="https://youtu.be/wjA9T9BukGk" target="_blank" rel="noopener">到 YouTube 觀看</a>。</p>
+    <a class="res" href="https://canva.link/63se4urtgd1pfze" target="_blank" rel="noopener"><span class="ic">🔹</span><span><b>第二次培訓簡報</b><br><span class="small">Canva｜業務實務練習</span></span></a>
+  </div>
+  <div class="card">
+    <h3>🗣️ 找一位「不認識這套系統的人」練習介紹</h3>
+    <p class="small">沒上線的夥伴也能練：照下面的順序介紹一次，再勾選自評。</p>
+    <label class="ck" id="pr1w"><input type="checkbox" id="pr1"><span>蹲下／轉向對方，先問「你覺得學英文哪裡最難？」</span></label>
+    <label class="ck" id="pr2w"><input type="checkbox" id="pr2"><span>給信心：「用你覺得最簡單的聲音，讓很難的單字變簡單。」</span></label>
+    <label class="ck" id="pr3w"><input type="checkbox" id="pr3"><span>帶一次 pad／pet 體驗：先分解，再合併（<a href="#" data-target="s4">第 4 站</a>）</span></label>
+    <label class="ck" id="pr4w"><input type="checkbox" id="pr4"><span>被問「是線上課嗎？」時，2 秒內接上優勢</span></label>
+    <label class="ck" id="pr5w"><input type="checkbox" id="pr5"><span>對方最後說出「這個好像值得了解一下」</span></label>
+    <input type="text" id="prWho" placeholder="我練習的對象（例：鄰居、同事、家人）" style="margin-top:8px">
+    <textarea id="prNote" placeholder="練習後的心得：對方哪裡最有反應？哪裡卡住了？想在 11/5 行前會問什麼？" style="margin-top:8px"></textarea>
+  </div>
+
+  <h3 class="part">【教育科技展｜第一次培訓】10/20（二）</h3>
 
   <div class="letter">
     <p>非常感謝所有人的時間與投入，<br>希望今天的活動與內容設計可以幫助到大家！</p>
@@ -639,6 +682,13 @@ function curChIdx(t){for(var i=0;i<CH.length;i++){if(CH[i][0]===t)return i;}retu
 function markPod(){if(!state.done.sp){state.done.sp=true;save();refresh();}}
 ["podNote"].forEach(function(id){var el=$(id);if(state.text[id])el.value=state.text[id];el.addEventListener("input",function(){state.text[id]=el.value;save();});});
 mcq($("podQ"),[{q:"",opts:["診斷","休閒","競爭","學習"],a:0,why:"診斷環境：高壓之下，人會不自覺暴露脆弱點；而能精準說中痛點的人，最容易獲得信任。"}]);
+
+/* ---------- 第二次培訓練習 ---------- */
+var pr=state.pr||{};state.pr=pr;
+["pr1","pr2","pr3","pr4","pr5"].forEach(function(id){var el=$(id);el.checked=!!pr[id];$(id+"w").classList.toggle("on",el.checked);
+  el.addEventListener("change",function(){pr[id]=el.checked;save();$(id+"w").classList.toggle("on",el.checked);});});
+["prWho","prNote"].forEach(function(id){var el=$(id);if(state.text[id])el.value=state.text[id];
+  el.addEventListener("input",function(){state.text[id]=el.value;save();});});
 
 /* ---------- 會後分享 ---------- */
 var ck=state.ck||{q:"",j:""};state.ck=ck;
@@ -986,6 +1036,7 @@ $("saveTxt").addEventListener("click",function(){
     "【思考題】\n"+($("reflect").value||"")+"\n\n"+
     "【Podcast 筆記】\n"+($("podNote").value||"")+"\n\n"+
     "【週四前留言】\n"+$("ckOut").textContent+"\n\n"+
+    "【第二次培訓：介紹練習】\n對象："+($("prWho").value||"")+"\n完成："+["pr1","pr2","pr3","pr4","pr5"].filter(function(i){return $(i).checked;}).length+" / 5\n心得："+($("prNote").value||"")+"\n\n"+
     "【聽辨前後測】前測 "+(pre===null?"—":pre+"/6")+"　後測 "+(post===null?"—":post+"/6")+"\n";
   var a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([t],{type:"text/plain;charset=utf-8"}));
