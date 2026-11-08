@@ -493,7 +493,16 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
   <div class="st-head"><div class="badge">🧳</div><h2>行前會：上場前最後確認</h2></div>
   <p class="lead">11/05（四）19:00–20:00，主講：恩綺（綺綺老師）。集合時間地點與分工、新官網報名流程、展場好康，一次看清楚。</p>
 
+  <div class="letter">
+    <p>2026 教育科技展倒數一週！！大家感覺如何呢？</p>
+    <p>今天的行前會中，最重要的任務就是要邀請大家「<b>登入新官網</b>」～～ 🥳（詳細教學請看行前會回放影片）</p>
+    <p>特別提醒，請使用您「<b>舊官網註冊的 email 帳號</b>」做登入喔！</p>
+    <p>謝謝各位老師們在充實的生活中抽空，一起為臺灣的英文教育投入心力！2026 教育科技展業務培訓，下課啦！！祝大家一切順利！獎金賺滿滿！✨</p>
+    <div class="sig">—— 恩綺（綺綺老師）</div>
+  </div>
+
   <a class="vlink" href="https://www.youtube.com/live/quXYH5BFvzE" target="_blank" rel="noopener"><span class="pl">▶</span><span><b>行前會回放</b><br><span class="small">【行前對焦會議】2026 資訊月×臺灣教育科技展 1151105</span></span></a>
+  <a class="res" href="https://canva.link/z7a94hi8bu8ulhf" target="_blank" rel="noopener"><span class="ic">📝</span><span><b>行前會簡報</b><br><span class="small">Canva｜集合分工、新官網報名流程、綜合 Q&amp;A</span></span></a>
 
   <div class="card">
     <h3>🕘 集合時間</h3>
@@ -521,13 +530,18 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
 
   <div class="card">
     <h3>💻 新官網：第一次登入（請先完成）</h3>
+    <div class="tip" style="margin-top:0">⚠️ 請用您「<b>舊官網註冊的 email 帳號</b>」登入新官網！不確定是哪個 email，可先到舊官網登入確認。</div>
+    <div class="grid2" style="margin-bottom:10px">
+      <a class="res" href="https://test-www.milinguall.com/login?next=%2Fmember" target="_blank" rel="noopener"><span class="ic">🔹</span><span><b>新官網登入</b><br><span class="small">test-www.milinguall.com</span></span></a>
+      <a class="res" href="https://www.milinguall.com/login.aspx" target="_blank" rel="noopener"><span class="ic">🔸</span><span><b>舊官網登入</b><br><span class="small">確認舊官網 email 帳號</span></span></a>
+    </div>
     <div class="steps4">
       <div>開啟官網，點右上角選單 ≡</div>
       <div>點「會員」→「會員登入」</div>
       <div>輸入 Email，勾選同意條款，按「取得驗證碼」</div>
       <div>輸入信箱收到的 6 碼驗證碼，按「登入」</div>
     </div>
-    <p class="small">舊官網會員也要用 Email 收驗證碼登入，登入後可到「會員資料」設定密碼。官網：<a href="https://www.milinguall.com/" target="_blank" rel="noopener">milinguall.com</a></p>
+    <p class="small">舊官網會員也要用 Email 收驗證碼登入，登入後可到「會員資料」設定密碼。</p>
   </div>
 
   <div class="card">
@@ -648,13 +662,18 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
   </div>
 
   <div class="card">
-    <h3>✅ 今日任務（完成後到恩綺的記事本留言）</h3>
-    <label class="ck" id="tk1w"><input type="checkbox" id="tk1"><span>1. 完成第一次登入新官網</span></label>
-    <label class="ck" id="tk2w"><input type="checkbox" id="tk2"><span>2. 嘗試第一次填寫線上銷售記錄表</span></label>
-    <div class="ck" id="tk3w" style="display:block">
-      <div>3. 留言：您的問題／我沒有問題！</div>
-      <textarea id="tkQ" placeholder="我的問題是……（沒有問題可留白）" style="margin-top:8px"></textarea>
+    <h3>✅ 今日任務：完成後到貼文底下留言</h3>
+    <div class="grid2">
+      <input type="text" id="tkName" placeholder="您的名字（例：王麗玲）">
+      <input type="text" id="tkMail" placeholder="舊官網註冊的 email" inputmode="email" autocomplete="email">
     </div>
+    <label class="ck" id="tk1w"><input type="checkbox" id="tk1"><span>已登入新官網</span></label>
+    <label class="ck" id="tk2w"><input type="checkbox" id="tk2"><span>已試填線上銷售表（<a href="https://forms.gle/iLdocWKszkFvoNHY7" target="_blank" rel="noopener">Google 表單</a>）</span></label>
+    <div class="ck" id="tk3w" style="display:block">
+      <div>有沒有問題？</div>
+      <textarea id="tkQ" placeholder="我的問題是……（沒有問題就留白）" style="margin-top:8px"></textarea>
+    </div>
+    <p class="small">email 只存在您自己的瀏覽器，不會傳到任何地方。</p>
     <div class="q">📋 留言預覽</div>
     <pre class="out" id="tkOut"></pre>
     <div class="row"><button class="btn o" id="tkCopy">複製留言</button><span class="fb" id="tkFb"></span></div>
@@ -705,6 +724,10 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
       <div class="t next"><b>展覽登場</b>11/12（四）–11/15（日）<br><span class="small">台北世貿一館 B215</span></div>
     </div>
   </div>
+
+  <h3 class="part">【教育科技展｜行前會】11/5（四）</h3>
+  <p>倒數一週！最重要的任務是用「舊官網註冊的 email」登入新官網，再到貼文底下留言。綺綺老師的話、登入連結、簡報與留言產生器都在 <a href="#" data-target="sx">🧳 行前會</a> 站。</p>
+  <a class="res" href="https://canva.link/z7a94hi8bu8ulhf" target="_blank" rel="noopener"><span class="ic">📝</span><span><b>行前會簡報</b><br><span class="small">Canva</span></span></a>
 
   <h3 class="part">【教育科技展｜第二次培訓】10/22（四）</h3>
   <div class="letter">
@@ -962,14 +985,15 @@ function woDraw(){[].forEach.call(document.querySelectorAll("#worry button"),fun
 woDraw();
 var tk=state.tk||{};state.tk=tk;
 ["tk1","tk2"].forEach(function(id){var el=$(id);el.checked=!!tk[id];el.addEventListener("change",function(){tk[id]=el.checked;save();tkRender();});});
-(function(){var el=$("tkQ");if(state.text.tkQ)el.value=state.text.tkQ;el.addEventListener("input",function(){state.text.tkQ=el.value;save();tkRender();});})();
+["tkQ","tkName","tkMail"].forEach(function(id){var el=$(id);if(state.text[id])el.value=state.text[id];el.addEventListener("input",function(){state.text[id]=el.value;save();tkRender();});});
 function tkRender(){
   $("tk1w").classList.toggle("on",!!tk.tk1);$("tk2w").classList.toggle("on",!!tk.tk2);
   var q=$("tkQ").value.trim();$("tk3w").classList.toggle("on",true);
-  $("tkOut").textContent="1. "+(tk.tk1?"✅":"⬜")+" 已完成第一次登入新官網\n2. "+(tk.tk2?"✅":"⬜")+" 已嘗試填寫線上銷售記錄表\n3. "+(q?"我的問題是："+q:"我沒有問題！");}
+  var nm=$("tkName").value.trim(),ml=$("tkMail").value.trim();
+  $("tkOut").textContent="我是 "+(nm||"ＯＯ")+" 老師\n1. "+(ml||"（您的 email）")+"\n2. "+(tk.tk1?"已登入新官網":"⬜ 尚未登入新官網")+"\n3. "+(tk.tk2?"已試填線上銷售表":"⬜ 尚未試填線上銷售表")+"\n4. "+(q?"我的問題是："+q:"我沒有問題。");}
 tkRender();
 $("tkCopy").addEventListener("click",function(){var t=$("tkOut").textContent,fb=$("tkFb");
-  function ok(){fb.className="fb ok";fb.textContent="已複製！貼到恩綺的記事本留言即可。";}
+  function ok(){var miss=!$("tkName").value.trim()||!$("tkMail").value.trim()||!tk.tk1||!tk.tk2;fb.className="fb "+(miss?"no":"ok");fb.textContent=miss?"已複製，但還有項目沒完成喔！":"已複製！貼到綺綺老師的貼文底下即可。";}
   function fallback(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");}catch(e){}ta.remove();ok();}
   try{navigator.clipboard.writeText(t).then(ok,fallback);}catch(e){fallback();}});
 
