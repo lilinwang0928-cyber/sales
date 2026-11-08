@@ -167,6 +167,14 @@ pre.out{white-space:pre-wrap;background:#f8f9fc;border:1px dashed var(--navy2);b
 .poll button{display:block;width:100%;text-align:left;margin:6px 0}
 .poll button.on{border-color:var(--orange);background:var(--cream)}
 .zoom img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+.tipgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.tipcard{display:flex;flex-direction:column;gap:4px;text-align:left;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff;color:var(--ink);min-width:0}
+.tipcard .tno{font-size:12px;font-weight:800;color:var(--orange);font-variant-numeric:tabular-nums;letter-spacing:.06em}
+.tipcard b{font-size:17px;color:var(--navy)}
+.tipcard .tbody{font-size:15px;line-height:1.65}
+.tipcard .tgo{font-size:13px;color:var(--navy2);margin-top:2px}
+.tipcard.closed .tbody,.tipcard.closed .tgo{display:none}
+.tipcard.closed{background:#f8f9fc}
 footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40px}
 @media (max-width:520px){.mouth{grid-template-columns:1fr}.timer{font-size:38px}}
 @media print{.pbar,.listen,nav.stations,.next,.btn,.rec{display:none!important}section.st{display:block!important;page-break-after:always}}
@@ -180,7 +188,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
     <h1>展場業務培訓互動學習單</h1>
     <div class="sub">2026 臺灣教育科技展｜第一次培訓：心法與方法</div>
     <div class="progress"><i id="pbar"></i></div>
-    <div class="ptext" id="ptext">完成 0 / 10 站</div>
+    <div class="ptext" id="ptext">完成 0 / 11 站</div>
   </div>
 </header>
 
@@ -223,6 +231,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
       <div class="mini"><b>⑦ 每日節奏</b><br>SOP 五階段</div>
       <div class="mini"><b>⑧ 我的開場白</b><br>寫下來、錄下來</div>
       <div class="mini"><b>🧳 行前會</b><br>集合、班表、新官網流程、展場好康</div>
+      <div class="mini"><b>🏆 超業密技</b><br>18 招整理＋情境抽卡＋口袋小抄</div>
       <div class="mini"><b>📣 會後分享</b><br>兩次培訓回放、簡報與綺綺老師的話</div>
     </div>
   </div>
@@ -652,7 +661,34 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
   </div>
 
   <div class="quote">你不需要說服每個家長——讓他感受到「這個值得了解」就夠了。<br>展場上你不是一個人：隊友在你旁邊，恩綺在你心裡 🫶<br>祝福大家在 2026 教育科技展一切順利、獎金賺滿滿！✨</div>
-  <div class="next"><button class="btn ghost" data-target="s8">← 第 8 站</button><button class="btn o" data-target="sq">📣 會後分享 →</button></div>
+  <div class="next"><button class="btn ghost" data-target="s8">← 第 8 站</button><button class="btn o" data-target="sk">🏆 超業密技 →</button></div>
+</section>
+
+<!-- 超業密技 -->
+<section class="st" id="sk" data-title="🏆 超業密技">
+  <div class="st-head"><div class="badge">🏆</div><h2>超級業務密技整理</h2></div>
+  <p class="lead">把三次培訓、Podcast 與行前會的重點濃縮成 18 招，依展場上的流程排好：攔截 → 破冰 → 體驗 → 應對 → 成交 → 收尾。點卡片可翻開或收合說明。</p>
+  <div class="pipe" style="margin-bottom:6px"><span>攔截</span><i>→</i><span>破冰</span><i>→</i><span>體驗</span><i>→</i><span>應對</span><i>→</i><span>成交</span><i>→</i><span>收尾</span></div>
+  <div class="row" style="margin:8px 0"><button class="btn ghost" id="tipAll">全部翻開</button><button class="btn ghost" id="tipNone">全部收合（自我測驗）</button></div>
+  <h3 class="part" style="margin-top:18px">攔截</h3><div class="tipgrid"><button class="tipcard" data-tip="0"><span class="tno">01</span><b>任務只有一個</b><span class="tbody">不需要說服、不一定單單成交，只要讓家長停下來，感受到「這個好像值得了解一下」。</span><span class="tgo" data-target="s1">→ 回去練習</span></button><button class="tipcard" data-tip="1"><span class="tno">02</span><b>好禮開口</b><span class="tbody">「加入 LINE 官方客服、輸入『26教育展』，就能帶 A–Z 字母點讀海報回家！」零門檻的小禮物，最容易讓人停下腳步。</span><span class="tgo" data-target="sx">→ 回去練習</span></button></div><h3 class="part" style="margin-top:18px">破冰</h3><div class="tipgrid"><button class="tipcard" data-tip="2"><span class="tno">03</span><b>30 秒找共同點</b><span class="tbody">像雷達一樣，從對方身上掃出能共鳴的訊號，用「我也……」接住對方，讓他覺得「你懂我」。</span><span class="tgo" data-target="s2">→ 回去練習</span></button><button class="tipcard" data-tip="3"><span class="tno">04</span><b>蹲下問痛點</b><span class="tbody">蹲下轉向孩子，不問「想不想學」，直接問「你覺得學英文哪裡最難？」先診斷，再開藥。</span><span class="tgo" data-target="s3">→ 回去練習</span></button><button class="tipcard" data-tip="4"><span class="tno">05</span><b>反差承諾</b><span class="tbody">「老師今天要用你覺得很簡單的聲音，讓很難的背單字變簡單。」讓對方進入「真的嗎？證明給我看」。</span><span class="tgo" data-target="s3">→ 回去練習</span></button></div><h3 class="part" style="margin-top:18px">體驗</h3><div class="tipgrid"><button class="tipcard" data-tip="5"><span class="tno">06</span><b>故意挑難的</b><span class="tbody">用 pad／pet 讓孩子發現自己的漏洞；只教 apple、dog，家長會覺得自己教就好。</span><span class="tgo" data-target="s4">→ 回去練習</span></button><button class="tipcard" data-tip="6"><span class="tno">07</span><b>先分解，再合併</b><span class="tbody">用 SoR 專利注音積木一塊一塊拆開，把「聽力問題」變成看得見的「口腔動作」，再合併唸出整個字。</span><span class="tgo" data-target="s4">→ 回去練習</span></button><button class="tipcard" data-tip="7"><span class="tno">08</span><b>訓練新肌肉</b><span class="tbody">「這個聲音中文裡不存在，你現在正在訓練新肌肉。」把「我很笨」重塑成「肌肉還沒練」。</span><span class="tgo" data-target="s4">→ 回去練習</span></button><button class="tipcard" data-tip="8"><span class="tno">09</span><b>前後測看見進步</b><span class="tbody">體驗前測一次、教完再測一次，讓孩子和家長親眼看到進步的證據。</span><span class="tgo" data-target="s4">→ 回去練習</span></button><button class="tipcard" data-tip="9"><span class="tno">10</span><b>看懂孩子再出招</b><span class="tbody">先判斷孩子是 A 型（無法投入）、B 型（活潑高互動）還是 C 型（冷靜），再調整帶法。</span><span class="tgo" data-target="s5">→ 回去練習</span></button></div><h3 class="part" style="margin-top:18px">應對</h3><div class="tipgrid"><button class="tipcard" data-tip="10"><span class="tno">11</span><b>把發球權還給孩子</b><span class="tbody">孩子說「我學過注音」，不要否定，反問：「你覺得用注音拼跟直接聽音，哪一個比較簡單？」</span><span class="tgo" data-target="s6">→ 回去練習</span></button><button class="tipcard" data-tip="11"><span class="tno">12</span><b>兩秒不冷場</b><span class="tbody">「這是線上課嗎？」講完「是線上的」立刻接：「有點讀筆和 App 陪跑，孩子能自學，也可以搭配老師的線上指導。」</span><span class="tgo" data-target="s6">→ 回去練習</span></button><button class="tipcard" data-tip="12"><span class="tno">13</span><b>ㄅㄆㄇ 比喻</b><span class="tbody">學中文是 ㄅㄆㄇ → 認字；學英文也是 PA → Phonics。少了 PA 就像沒學 ㄅㄆㄇ 就直接認國字。</span><span class="tgo" data-target="sx">→ 回去練習</span></button><button class="tipcard" data-tip="13"><span class="tno">14</span><b>家長三問對答</b><span class="tbody">零基礎：最適合，從第一個聲音就學對；學過自然發音：不重複，是補上 PA；程度好：不簡單，是更精準。</span><span class="tgo" data-target="sx">→ 回去練習</span></button></div><h3 class="part" style="margin-top:18px">成交</h3><div class="tipgrid"><button class="tipcard" data-tip="14"><span class="tno">15</span><b>零風險收尾</b><span class="tbody">收到教材 7 天內全額退；方案 B 照計畫學沒達標，指導學費全額退。用保障化解最後的猶豫。</span><span class="tgo" data-target="sx">→ 回去練習</span></button><button class="tipcard" data-tip="15"><span class="tno">16</span><b>好康疊加</b><span class="tbody">買拼讀小達人送背單字工具組＋拼讀發音卡；加購真人指導再送字彙字典；ATM 轉帳再送 700 單，最高價值 $7,880。</span><span class="tgo" data-target="sx">→ 回去練習</span></button></div><h3 class="part" style="margin-top:18px">收尾</h3><div class="tipgrid"><button class="tipcard" data-tip="16"><span class="tno">17</span><b>每場後立刻記錄</b><span class="tbody">完成體驗 → 填紙本 → 填線上 → 紙本打勾「已完成」，趁記憶新鮮，不要拖。</span><span class="tgo" data-target="s7">→ 回去練習</span></button><button class="tipcard" data-tip="17"><span class="tno">18</span><b>不熟就找團隊</b><span class="tbody">你不需要無所不知，只需要用心帶體驗、真誠接客人；行政細節交給小綠、吳真、龍龍。</span><span class="tgo" data-target="sx">→ 回去練習</span></button></div>
+
+  <div class="card">
+    <h3>🎲 情境抽卡：這時候用哪一招？</h3>
+    <p class="small">抽一張展場情境，選出最適合的密技。連續答對 5 題就完成本站。</p>
+    <div class="flash" id="scText">按「抽一張」開始</div>
+    <div id="scOpts" style="margin-top:10px"></div>
+    <div class="fb" id="scFb"></div>
+    <div class="row" style="margin-top:8px"><button class="btn o" id="scDraw">抽一張</button><span class="small" id="scScore">答對 0 題</span></div>
+  </div>
+
+  <div class="card">
+    <h3>📱 口袋小抄（存到手機，上場前看一眼）</h3>
+    <pre class="out" id="pocket"></pre>
+    <div class="row"><button class="btn o" id="pocketCopy">複製小抄</button><span class="fb" id="pocketFb"></span></div>
+  </div>
+
+  <div class="quote">用心帶體驗，真誠接客人。<br>讓他感受到「這個值得了解」，就是最好的成交。</div>
+  <div class="next"><button class="btn ghost" data-target="sx">← 行前會</button><button class="btn o" data-target="sq">📣 會後分享 →</button></div>
 </section>
 
 <!-- 會後分享 -->
@@ -741,7 +777,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px 40p
     <textarea id="ckIns" placeholder="今天最讓我有感的是……"></textarea>
     <label class="row small" style="margin-top:6px"><input type="checkbox" id="ckInsAdd" style="width:auto"> 把我的啟發加進留言</label>
   </div>
-  <div class="next"><button class="btn ghost" data-target="sx">← 行前會</button><button class="btn o" data-target="s0">回到出發 ↺</button></div>
+  <div class="next"><button class="btn ghost" data-target="sk">← 超業密技</button><button class="btn o" data-target="s0">回到出發 ↺</button></div>
 </section>
 
 </div></main>
@@ -793,9 +829,9 @@ document.addEventListener("click",function(e){
 });
 function markDone(n){state.done["s"+n]=true;save();refresh();}
 function refresh(){
-  var c=(state.done.sp?1:0)+(state.done.sx?1:0);for(var i=1;i<=8;i++){if(state.done["s"+i])c++;}
-  $("pbar").style.width=(c/10*100)+"%";
-  $("ptext").textContent="完成 "+c+" / 10 站"+(c===10?"　🎉 全部完成，展場見！":"");
+  var c=(state.done.sp?1:0)+(state.done.sx?1:0)+(state.done.sk?1:0);for(var i=1;i<=8;i++){if(state.done["s"+i])c++;}
+  $("pbar").style.width=(c/11*100)+"%";
+  $("ptext").textContent="完成 "+c+" / 11 站"+(c===11?"　🎉 全部完成，展場見！":"");
   [].forEach.call(nav.children,function(b){b.classList.toggle("done",!!state.done[b.getAttribute("data-target")]);});
 }
 show("s0");refresh();
@@ -936,6 +972,37 @@ $("tkCopy").addEventListener("click",function(){var t=$("tkOut").textContent,fb=
   function ok(){fb.className="fb ok";fb.textContent="已複製！貼到恩綺的記事本留言即可。";}
   function fallback(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");}catch(e){}ta.remove();ok();}
   try{navigator.clipboard.writeText(t).then(ok,fallback);}catch(e){fallback();}});
+
+/* ---------- 超業密技 ---------- */
+var TIPS=[["攔截", "任務只有一個", "不需要說服、不一定單單成交，只要讓家長停下來，感受到「這個好像值得了解一下」。", "s1"], ["攔截", "好禮開口", "「加入 LINE 官方客服、輸入『26教育展』，就能帶 A–Z 字母點讀海報回家！」零門檻的小禮物，最容易讓人停下腳步。", "sx"], ["破冰", "30 秒找共同點", "像雷達一樣，從對方身上掃出能共鳴的訊號，用「我也……」接住對方，讓他覺得「你懂我」。", "s2"], ["破冰", "蹲下問痛點", "蹲下轉向孩子，不問「想不想學」，直接問「你覺得學英文哪裡最難？」先診斷，再開藥。", "s3"], ["破冰", "反差承諾", "「老師今天要用你覺得很簡單的聲音，讓很難的背單字變簡單。」讓對方進入「真的嗎？證明給我看」。", "s3"], ["體驗", "故意挑難的", "用 pad／pet 讓孩子發現自己的漏洞；只教 apple、dog，家長會覺得自己教就好。", "s4"], ["體驗", "先分解，再合併", "用 SoR 專利注音積木一塊一塊拆開，把「聽力問題」變成看得見的「口腔動作」，再合併唸出整個字。", "s4"], ["體驗", "訓練新肌肉", "「這個聲音中文裡不存在，你現在正在訓練新肌肉。」把「我很笨」重塑成「肌肉還沒練」。", "s4"], ["體驗", "前後測看見進步", "體驗前測一次、教完再測一次，讓孩子和家長親眼看到進步的證據。", "s4"], ["體驗", "看懂孩子再出招", "先判斷孩子是 A 型（無法投入）、B 型（活潑高互動）還是 C 型（冷靜），再調整帶法。", "s5"], ["應對", "把發球權還給孩子", "孩子說「我學過注音」，不要否定，反問：「你覺得用注音拼跟直接聽音，哪一個比較簡單？」", "s6"], ["應對", "兩秒不冷場", "「這是線上課嗎？」講完「是線上的」立刻接：「有點讀筆和 App 陪跑，孩子能自學，也可以搭配老師的線上指導。」", "s6"], ["應對", "ㄅㄆㄇ 比喻", "學中文是 ㄅㄆㄇ → 認字；學英文也是 PA → Phonics。少了 PA 就像沒學 ㄅㄆㄇ 就直接認國字。", "sx"], ["應對", "家長三問對答", "零基礎：最適合，從第一個聲音就學對；學過自然發音：不重複，是補上 PA；程度好：不簡單，是更精準。", "sx"], ["成交", "零風險收尾", "收到教材 7 天內全額退；方案 B 照計畫學沒達標，指導學費全額退。用保障化解最後的猶豫。", "sx"], ["成交", "好康疊加", "買拼讀小達人送背單字工具組＋拼讀發音卡；加購真人指導再送字彙字典；ATM 轉帳再送 700 單，最高價值 $7,880。", "sx"], ["收尾", "每場後立刻記錄", "完成體驗 → 填紙本 → 填線上 → 紙本打勾「已完成」，趁記憶新鮮，不要拖。", "s7"], ["收尾", "不熟就找團隊", "你不需要無所不知，只需要用心帶體驗、真誠接客人；行政細節交給小綠、吳真、龍龍。", "sx"]], SCEN=[["一位媽媽推著嬰兒車經過，眼神掃過攤位但沒有停下。", 1, [0, 2]], ["孩子被帶到攤位前，你第一句要問什麼？", 3, [2, 4]], ["孩子說：「背單字好難。」你要怎麼接？", 4, [3]], ["家長在旁邊嘀咕：「apple、dog 我在家也能教啊。」", 5], ["孩子 pad 和 pet 一直分不出來，開始皺眉。", 7, [5, 6, 8]], ["孩子說：「我以前都用注音學英文。」", 10], ["家長問：「這是線上課嗎？有實體教室嗎？」", 11], ["家長問：「我家孩子已經學過自然發音，會不會重複？」", 13, [12]], ["家長說：「好像不錯，可是 28,000 有點貴，買錯怎麼辦？」", 14, [15]], ["家長被問倒：「SoR 17 班跟拼讀小達人差在哪？」你也不太確定。", 17], ["體驗結束、家長說要再考慮，人走了。", 16], ["家長猶豫要不要加購真人指導。", 15, [14]]];
+var tcs=[].slice.call(document.querySelectorAll(".tipcard"));
+tcs.forEach(function(c){c.addEventListener("click",function(e){if(e.target.closest(".tgo"))return;c.classList.toggle("closed");});});
+$("tipAll").addEventListener("click",function(){tcs.forEach(function(c){c.classList.remove("closed");});});
+$("tipNone").addEventListener("click",function(){tcs.forEach(function(c){c.classList.add("closed");});});
+var scStreak=0,scCur=null,scBag=[];
+function scNext(){
+  if(!scBag.length)scBag=shuffle(SCEN.map(function(_,i){return i;}));
+  scCur=SCEN[scBag.pop()];$("scText").textContent="🎬 "+scCur[0];$("scFb").textContent="";
+  var ans=scCur[1],pool=shuffle(TIPS.map(function(_,i){return i;}).filter(function(i){return i!==ans&&(scCur[2]||[]).indexOf(i)<0;})).slice(0,3);
+  var opts=shuffle(pool.concat([ans])),box=$("scOpts"),done=false;box.innerHTML="";
+  opts.forEach(function(i){var b=document.createElement("button");b.className="opt";b.innerHTML="<b>"+esc(TIPS[i][1])+"</b>";
+    b.addEventListener("click",function(){if(done)return;
+      if(i===ans){done=true;b.classList.add("right");scStreak++;$("scFb").className="fb ok";$("scFb").textContent="✔ "+TIPS[ans][2];
+        if(scStreak>=5&&!state.done.sk){state.done.sk=true;save();refresh();}}
+      else{b.classList.add("wrong");scStreak=0;$("scFb").className="fb no";$("scFb").textContent="✘ 連勝歸零，再想想看。";}
+      $("scScore").textContent="連續答對 "+scStreak+" 題"+(scStreak>=5?"　🏆 超業認證！":"");});
+    box.appendChild(b);});
+}
+$("scDraw").addEventListener("click",scNext);
+var pk="🏆 SoR 展場超業小抄（B215）\n";
+["攔截","破冰","體驗","應對","成交","收尾"].forEach(function(ph){pk+="\n【"+ph+"】\n";
+  TIPS.forEach(function(t,i){if(t[0]===ph)pk+=(i+1)+". "+t[1]+"\n";});});
+pk+="\n用心帶體驗，真誠接客人！";
+$("pocket").textContent=pk;
+$("pocketCopy").addEventListener("click",function(){var fb=$("pocketFb");
+  function ok(){fb.className="fb ok";fb.textContent="已複製！貼到手機備忘錄或 LINE 記事本。";}
+  function fallback(){var ta=document.createElement("textarea");ta.value=pk;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");}catch(e){}ta.remove();ok();}
+  try{navigator.clipboard.writeText(pk).then(ok,fallback);}catch(e){fallback();}});
 
 /* ---------- 會後分享 ---------- */
 var ck=state.ck||{q:"",j:""};state.ck=ck;
